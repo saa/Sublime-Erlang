@@ -8,7 +8,8 @@
       "app.src",
       "appup",
       "rebar.config",
-      "reltool.config"
+      "reltool.config",
+      "relx.config"
   ],
   "tokens": {
     "ATOM": "'[^'\\\\]*(?:\\\\.[^'\\\\]*)*'|[[:lower:]][[:alnum:]@_]*",
