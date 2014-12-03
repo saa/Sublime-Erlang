@@ -11,11 +11,11 @@
 		<key>showInSymbolList</key>
 		<integer>1</integer>
 		<key>symbolTransformation</key>
-		<string>s/^/Macro: /</string>
+		<string>s/^/?/</string>
 		<key>showInIndexedSymbolList</key>
 		<integer>1</integer>
 		<key>symbolIndexTransformation</key>
-		<string>s/^/Macro: /</string>
+		<string>s/^/?/</string>
 	</dict>
 </dict>
 </plist>
