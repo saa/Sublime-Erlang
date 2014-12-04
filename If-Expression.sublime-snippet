@@ -1,9 +1,11 @@
 <snippet>
-    <content><![CDATA[if
+		<content><![CDATA[if
 	${1:guard} ->
-		${2:body}
+		${2:body};
+	${3:true} ->
+		${4:else}
 end]]></content>
-    <tabTrigger>if</tabTrigger>
-    <scope>source.erlang</scope>
-    <description>If Expression</description>
+		<tabTrigger>if</tabTrigger>
+		<scope>source.erlang</scope>
+		<description>If Expression</description>
 </snippet>

@@ -2,7 +2,12 @@
 	<scope>source.erlang - source.erlang.expression</scope>
 	<description>application Callbacks</description>
 	<content><![CDATA[-behaviour(application).
--export([start/2, prep_stop/1, stop/1, config_change/3]).
+-export([
+	start/2,
+	prep_stop/1,
+	stop/1,
+	config_change/3
+]).
 
 %% @private
 start(_StartType, _StartArgs) ->
