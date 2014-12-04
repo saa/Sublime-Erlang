@@ -9,19 +9,15 @@
 	config_change/3
 ]).
 
-%% @private
 start(_StartType, _StartArgs) ->
 	{ok, self(), undefined}.
 
-%% @private
 prep_stop(State) ->
 	State.
 
-%% @private
 stop(_State) ->
 	ok.
 
-%% @private
 config_change(_Changed, _New, _Removed) ->
 	ok.
 ]]></content>
