@@ -269,29 +269,8 @@
               },
               "end": "(?=\\b(end)\\b)",
               "patterns": [
-                {
-                  "begin": "(?!->)",
-                  "end": "(?=->)",
-                  "patterns": [
-                    {"include": "#integer"},
-                    {"include": "#variable"},
-                    {"include": "#macro-usage"},
-                    {"include": "#comment"},
-                    {
-                      "match": "infinity",
-                      "name": "constant.other.symbol.unquoted.erlang"
-                    },
-                    {
-                      "match": "'infinity'",
-                      "name": "constant.other.symbol.quoted.erlang"
-                    },
-                    {
-                      "match": "[^\\s]",
-                      "name": "invalid.illegal.receive-timeout.erlang"
-                    }
-                  ]
-                },
-                {"include": "#internal-arrow-clause-expression"}
+                {"include": "#internal-arrow-clause-expression"},
+                {"include": "$self"}
               ]
             }
           ]
@@ -391,7 +370,7 @@
           "beginCaptures": {
             "1": {"name": "keyword.control.fun.erlang"}
           },
-          "end": "\\b(end)\\b|(?=[^[:alnum:]\\s\\?\\('/_]+)",
+          "end": "\\b(end)\\b|(?=(/\\s*(?:[0-9]+|⟪VARIABLE⟫))|([^[:alnum:]\\s\\?\\('/_]+))",
           "endCaptures": {
             "1": {"name": "keyword.control.end.erlang"}
           },
@@ -600,7 +579,7 @@
     },
 
     "illegal-keyword": {
-      "match": "\\b(after|begin|case|catch|cond|end|fun|if|let|of|query|try|receive|when)\\b",
+      "match": "\\b(after|begin|case|catch|cond|end|fun|if|let|of|try|receive|when)\\b",
       "name": "invalid.illegal.keyword.control.erlang"
     },
 
