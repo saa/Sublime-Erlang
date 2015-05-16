@@ -1,17 +1,16 @@
 <snippet>
 	<scope>source.erlang - source.erlang.expression</scope>
 	<description>supervisor Callbacks</description>
-	<content><![CDATA[-export([start_link/0]).
-
--behaviour(supervisor).
+	<content><![CDATA[-behaviour(supervisor).
 -export([init/1]).
+
+-export([start_link/0]).
 
 -define(SERVER, ?MODULE).
 
 start_link() ->
 	supervisor:start_link({local, ?SERVER}, ?MODULE, {}).
 
-%% @private
 init({}) ->
 	Child1 =
 		{${1:child_process},

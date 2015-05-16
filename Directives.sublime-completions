@@ -17,7 +17,7 @@
 		{ "trigger": "-include_lib", "contents": "-include_lib(\"${1:app/file.hrl}\")."},
 		{ "trigger": "-module", "contents": "-module(${1:${TM_FILEPATH/^.*\\/(.*)\\.[a-z]+$/$1/g}})."},
 		{ "trigger": "-opaque", "contents": "-opaque ${1:type}() :: ${2:term()}."},
-		{ "trigger": "-record", "contents": "-record(${1:record}, {${2:field}${3: = ${4:value}}})."},
+		{ "trigger": "-record", "contents": "-record(${1:record}, {\n\t${2:field}${3: = ${4:value}}\n})."},
 		{ "trigger": "-spec", "contents": "-spec ${1:function}(${2:Parameters}) -> ${3:ReturnType}."},
 		{ "trigger": "-type", "contents": "-type ${1:type}() :: ${2:term()}."},
 		{ "trigger": "-undef", "contents": "-undef(${1:macro})."}
