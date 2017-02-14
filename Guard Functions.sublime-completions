@@ -25,6 +25,7 @@
     {"trigger": "is_record()", "contents": "is_record($0)"},
     {"trigger": "is_reference()", "contents": "is_reference($0)"},
     {"trigger": "is_tuple()", "contents": "is_tuple($0)"},
+    {"trigger": "is_map()", "contents": "is_map($0)"},
     {"trigger": "length()", "contents": "length($0)"},
     {"trigger": "node()", "contents": "node($0)"},
     {"trigger": "round()", "contents": "round($0)"},

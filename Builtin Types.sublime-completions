@@ -40,6 +40,7 @@
     "tuple()",
     "timeout()",
     "var()",
+    "map()"
 
     {"trigger": "nonempty_improper_list()", "contents": "nonempty_improper_list($0)"},
     {"trigger": "nonempty_list()", "contents": "nonempty_list($0)"},
